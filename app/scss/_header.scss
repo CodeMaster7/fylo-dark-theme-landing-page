@@ -1,0 +1,31 @@
+header {
+	display: grid;
+	grid-template-columns: minmax(6.25rem, 1fr) repeat(3, auto);
+	gap: 1.5rem;
+	align-items: center;
+	background-color: $darkBlueIntro;
+	padding: 1.5625rem 1.25rem 3.125rem 1.25rem;
+
+	@include breakpoint-up(medium) {
+		padding: 4.5625rem 5rem;
+	}
+
+	img {
+		width: 5.1875rem;
+
+		@include breakpoint-up(medium) {
+			width: 11.5625rem;
+		}
+	}
+
+	a {
+		font-size: 0.875rem;
+
+        @include breakpoint-up(medium) {
+            font-size: 1rem;
+            &:not(:last-child){
+                margin-right: 3.5rem;
+            }
+        }
+	}
+}

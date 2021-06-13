@@ -1,2 +1,7 @@
-@import 'globals';
-@import 'variables';
+// Functional Styles
+@import "variables";
+@import 'mixins';
+
+// Components Styles
+@import "globals";
+@import 'header';

@@ -9,14 +9,14 @@ $cyanInside: hsl(176, 68%, 64%);
 $blueInside: hsl(198, 60%, 50%);
 $lightRedError: hsl(0, 100%, 63%);
 // ### Neutral
-$grayishBlue: hsl(0, 0%, 100%);
+$white: hsl(0, 0%, 100%);
+
+// Font styles
+$font-title: 'Raleway', sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
 
 // Font Sizes
 $font-small: 0.875rem; // 14px
 $font-med: 1.125rem; // 18px
 $font-lg: 1.25rem; // 20px
 $font-xlg: 3.25rem; // 52px
-
-// Font styles
-$font-title: 'Raleway', sans-serif;
-$font-body: 'Open Sans', sans-serif;

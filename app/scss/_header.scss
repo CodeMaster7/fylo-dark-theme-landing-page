@@ -21,6 +21,10 @@ header {
 	a {
 		font-size: 0.875rem;
 
+        &:hover {
+            text-decoration: underline;
+        }
+
         @include breakpoint-up(medium) {
             font-size: 1rem;
             &:not(:last-child){

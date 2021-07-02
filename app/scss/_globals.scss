@@ -34,6 +34,10 @@ body {
 	color: $white;
 }
 
+section {
+    padding: 0 27px 160px;
+}
+
 button {
 	border: none;
 	background: linear-gradient(to right, $cyanInside, $blueInside);
@@ -50,7 +54,8 @@ button {
 	border-radius: 1.875rem;
 	cursor: pointer;
 
-	&:hover {
+	&:hover,
+	&:active {
 		background: linear-gradient(to right, $cyanInside, $cyanInside);
 	}
 

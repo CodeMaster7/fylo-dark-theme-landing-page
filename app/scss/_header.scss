@@ -21,15 +21,16 @@ header {
 	a {
 		font-size: 0.875rem;
 
-        &:hover {
-            text-decoration: underline;
-        }
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
 
-        @include breakpoint-up(medium) {
-            font-size: 1rem;
-            &:not(:last-child){
-                margin-right: 3.5rem;
-            }
-        }
+		@include breakpoint-up(medium) {
+			font-size: 1rem;
+			&:not(:last-child) {
+				margin-right: 3.5rem;
+			}
+		}
 	}
 }

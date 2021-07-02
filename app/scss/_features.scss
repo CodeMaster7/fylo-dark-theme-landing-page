@@ -1,0 +1,18 @@
+.features {
+	background-color: $darkBlueMain;
+
+	.feature-grid {
+		max-width: 55rem;
+		margin: 0 auto;
+
+		@include breakpoint-up(medium) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr); // repeat 1fr two times
+		}
+	}
+
+	.feature {
+		border: 1px solid red;
+		min-height: 150px;
+	}
+}

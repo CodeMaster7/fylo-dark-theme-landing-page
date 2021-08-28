@@ -2,8 +2,11 @@
 	background-color: $darkBlueMain;
 
 	.feature-grid {
-		max-width: 55rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 6vw 10vw;
 		margin: 0 auto;
+		max-width: 55rem;
 
 		@include breakpoint-up(medium) {
 			display: grid;
@@ -12,7 +15,30 @@
 	}
 
 	.feature {
-		border: 1px solid red;
-		min-height: 150px;
+		text-align: center;
+
+		&-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 90px;
+			margin-bottom: 30px;
+
+			img {
+				height: 100%;
+				width: auto;
+			}
+		}
+
+		&-title {
+			font-family: $font-title;
+			font-size: 1.375rem;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+
+		&-description {
+			font-size: 1rem;
+		}
 	}
 }

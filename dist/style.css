@@ -204,8 +204,11 @@ header a:hover, header a:focus {
 }
 
 .features .feature-grid {
-  max-width: 55rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6vw 10vw;
   margin: 0 auto;
+  max-width: 55rem;
 }
 
 @media (min-width: 40rem) {
@@ -216,6 +219,29 @@ header a:hover, header a:focus {
 }
 
 .features .feature {
-  border: 1px solid red;
-  min-height: 150px;
+  text-align: center;
+}
+
+.features .feature-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.features .feature-image img {
+  height: 100%;
+  width: auto;
+}
+
+.features .feature-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.features .feature-description {
+  font-size: 1rem;
 }

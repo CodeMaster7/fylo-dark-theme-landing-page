@@ -1,13 +1,12 @@
 # Frontend Mentor - Easybank landing page solution
 
-This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Performance](#performance)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -28,16 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-[![easybank-website.jpg](https://i.postimg.cc/MZfDq7fg/easybank-website.jpg)](https://postimg.cc/14P6KNHK)
-
-### Performance
-
-[![easybank-chrome-performance.jpg](https://i.postimg.cc/j2fQcTrR/easybank-chrome-performance.jpg)](https://postimg.cc/sGVhftXL)
+[![fylo.jpg](https://i.postimg.cc/1Rq3nF85/fylo.jpg)](https://postimg.cc/YjtHThNJ)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN)
-- Live Site URL: [Add live site URL here](https://youthful-northcutt-b93b58.netlify.app/)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions)
+<!-- - Live Site URL: [live site URL here](https://youthful-northcutt-b93b58.netlify.app/) -->
 
 ## My process
 

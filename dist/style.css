@@ -26,7 +26,6 @@ html {
 a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
 }
 
 h1,
@@ -301,9 +300,140 @@ header a:hover, header a:focus {
   color: #65e2d9;
   border-bottom: 1px solid #65e2d9;
   transition: all 200ms ease-in-out;
+  font-size: 1rem;
 }
 
 .productive-text a:hover {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
+}
+
+.quotes {
+  background-color: #181f2a;
+  padding-bottom: 200px;
+}
+
+.quotes__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  max-width: 500px;
+}
+
+@media (min-width: 64rem) {
+  .quotes__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1320px;
+  }
+}
+
+.quotes__grid:first-child:before {
+  content: url("/images/bg-quotes.png");
+  transform: scale(0.7);
+  position: absolute;
+  z-index: 0;
+  top: -20px;
+  left: 20px;
+  width: 27px;
+  height: 18px;
+}
+
+@media (min-width: 64rem) {
+  .quotes__grid:first-child:before {
+    transform: none;
+    top: 37px;
+    left: 50px;
+    width: 60px;
+    height: 45px;
+  }
+}
+
+.quotes .quote {
+  position: relative;
+  z-index: 1;
+  background-color: #202a3c;
+  padding: 30px 24px 24px 24px;
+  border-radius: 5px;
+}
+
+@media (min-width: 64rem) {
+  .quotes .quote {
+    padding: 44px 24px 24px 24px;
+  }
+}
+
+.quotes .quote__text {
+  font-size: 0.65em;
+  margin-bottom: 30px;
+}
+
+.quotes .quote__author {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: 20px 20px;
+  column-gap: 14px;
+}
+
+.quotes .quote__author-image {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.quotes .quote__author-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.quotes .quote__author-name {
+  font-size: 0.5em;
+  font-weight: 700;
+}
+
+.quotes .quote__author-title {
+  font-size: 0.5em;
+}
+
+.signup {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  transform: translateY(-248px);
+}
+
+.signup__block {
+  border-radius: 10px;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+  background-color: #1c2431;
+  padding: 45px 30px 45px 30px;
+  text-align: center;
+}
+
+@media (min-width: 40rem) {
+  .signup__block {
+    padding: 45px 60px 45px 60px;
+  }
+}
+
+@media (min-width: 64rem) {
+  .signup__block {
+    padding: 45px 80px 45px 80px;
+  }
+}
+
+.signup__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+@media (min-width: 40rem) {
+  .signup__form {
+    grid-template-columns: 1fr 200px;
+    gap: 30px;
+    margin-top: 40px;
+  }
 }

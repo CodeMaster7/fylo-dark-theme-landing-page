@@ -1,0 +1,55 @@
+.productive {
+	background-color: $darkBlueMain;
+
+	&-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 3.125rem;
+
+		@include breakpoint-up(medium) {
+			grid-template-columns: 4fr 3fr;
+		}
+	}
+
+	&-image {
+		text-align: center;
+
+		img {
+			width: 100%;
+			max-width: 600px;
+		}
+	}
+
+	&-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		h2 {
+			max-width: 400px;
+
+			@include breakpoint-up(large) {
+				max-width: 400px;
+			}
+		}
+
+		p {
+			max-width: 550px;
+		}
+
+		a {
+            background-image: url('/images/icon-arrow.svg');
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding-right: 25px;
+            color: $cyanInside;
+            border-bottom: 1px solid $cyanInside;
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                color: #ffffff;
+                border-bottom: 1px solid #ffffff;
+            }
+        }
+	}
+}

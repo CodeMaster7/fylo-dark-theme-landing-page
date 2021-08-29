@@ -25,16 +25,18 @@ html {
 *,
 a {
   color: white;
-}
-
-a {
   text-decoration: none;
+  font-size: 1rem;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-size: 1rem;
 }
 
 body {
@@ -244,4 +246,64 @@ header a:hover, header a:focus {
 
 .features .feature-description {
   font-size: 1rem;
+}
+
+.productive {
+  background-color: #181f2a;
+}
+
+.productive-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.125rem;
+}
+
+@media (min-width: 40rem) {
+  .productive-grid {
+    grid-template-columns: 4fr 3fr;
+  }
+}
+
+.productive-image {
+  text-align: center;
+}
+
+.productive-image img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.productive-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.productive-text h2 {
+  max-width: 400px;
+}
+
+@media (min-width: 64rem) {
+  .productive-text h2 {
+    max-width: 400px;
+  }
+}
+
+.productive-text p {
+  max-width: 550px;
+}
+
+.productive-text a {
+  background-image: url("/images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 25px;
+  color: #65e2d9;
+  border-bottom: 1px solid #65e2d9;
+  transition: all 200ms ease-in-out;
+}
+
+.productive-text a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
